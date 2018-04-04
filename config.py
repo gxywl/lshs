@@ -9,6 +9,8 @@ class Config:
     SQLALCHEMY_COMMIT_ON_TEARDOWN = True
     SQLALCHEMY_TRACK_MODIFICATIONS = True
 
+    BABEL_DEFAULT_LOCALE = 'zh_CN'
+
     @staticmethod
     def init_app(app):
         pass

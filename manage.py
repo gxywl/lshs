@@ -19,13 +19,6 @@ app=create_app(os.getenv('LSHS_CONFIG') or 'default')
 manager = Manager(app)
 migrate=Migrate(app,db)
 
-
-#----------------------
-
-babel = Babel(app)
-
-app.config['BABEL_DEFAULT_LOCALE'] = 'zh_CN'
-
 # ----------------------
 class MyModelView(ModelView):
     def is_accessible(self):
