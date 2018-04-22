@@ -1,4 +1,4 @@
-# -*- coding: utf-8 -*-
+# _*_ encoding: utf-8 _*_
 import unittest
 from app import create_app, db
 from app.models import User
