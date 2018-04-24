@@ -19,7 +19,8 @@ app=create_app(os.getenv('LSHS_CONFIG') or 'default')
 
 manager = Manager(app)
 migrate=Migrate(app,db)
-
+#---
+babel = Babel(app)
 # ----------------------
 class MyModelView(ModelView):
     def is_accessible(self):
@@ -38,7 +39,7 @@ class UserView(MyModelView):
 
     # 这里是为了自定义显示的column名字
     column_labels = dict(
-        user=u'用户',     username=u'用户名',
+        user=u'账号', pin=u'口令', username=u'用户名', isadm=u'管理员',
     )
 #     #column_list = ('Email', 'Username')
 #     # column_labels = {
