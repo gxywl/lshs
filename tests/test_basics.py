@@ -1,3 +1,4 @@
+# _*_ encoding: utf-8 _*_
 import unittest
 
 from flask import current_app

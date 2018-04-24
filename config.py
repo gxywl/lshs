@@ -1,3 +1,4 @@
+# _*_ encoding: utf-8 _*_
 import os
 
 basedir = os.path.abspath(os.path.dirname(__file__))

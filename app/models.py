@@ -1,3 +1,4 @@
+# _*_ encoding: utf-8 _*_
 from datetime import datetime
 
 from flask_login import UserMixin
